@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris_medida"
+    android:orientation="vertical"
+    tools:context=".Alta_registro">
+
+    <TextView
+        android:id="@+id/tv_Numero_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingTop="56dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="16dp"
+        android:text="Número :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_Numero_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Introduzca el número"
+        android:inputType="number"
+        android:padding="6dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_Nombre_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingTop="24dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="16dp"
+        android:text="Nombre"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_Nombre_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Introduzca el nombre"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_Localidad_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingTop="16dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="16dp"
+        android:text="Localidad"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_Localidad_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Introduzca la localidad"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_Correo_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingTop="16dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="16dp"
+        android:text="Correo Electrónico"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_Correo_Alta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Introduzca el correo electrónico"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:paddingTop="24dp"
+        android:paddingRight="6dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="leerServicio"
+            android:paddingLeft="6dp"
+            android:paddingTop="16dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="16dp"
+            android:text="Dar de Alta" />
+
+        <Button
+            android:id="@+id/btn_volver_alta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cerrarVentana"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="16dp"
+            android:text="Regresar" />
+    </LinearLayout>
+
+</LinearLayout>
